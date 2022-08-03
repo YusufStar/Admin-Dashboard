@@ -252,7 +252,40 @@ main .insights > div:hover {
 }
 
 main .insights > div span {
-    background: coral;
+    background: var(--color-primary);
     padding: 0.5rem;
     border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+main .insights > div.expenses span {
+    background: var(--color-danger);
+}
+
+main .insights > div.income span {
+    background: var(--color-success);
+}
+
+main .insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights h3 {
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+main .insights .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+main .insights svg {
+    width: 7rem;
+    height: 7rem;
 }
